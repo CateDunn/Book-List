@@ -59,13 +59,13 @@ function(e){
   const ui = new UI();
 
   // validate
-  if(title === '' || author === '' || isbn){
+  if(title === '' || author === '' || isbn ===''){
     //Error Alert
     ui.showAlert('Please fill in all fields', 'error');
   } else {
   //Add book to list
   ui.addBookToList(book);
-  
+  ui.showAlert('Book Added!', 'success')
   //clear fields
   ui.clearFields();
   }
