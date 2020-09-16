@@ -9,7 +9,6 @@ function Book(title, author, isbn){
 function UI(){
 
   UI.prototype.addBookToList = function(book){
-    console.log(book)
     const list = document.getElementById('book-list');
     //create tr element
     const row = document.createElement('tr');
@@ -43,9 +42,6 @@ UI.prototype.deleteBook = function(target){
     target.parentElement.parentElement.remove();
   }
 }
-
-
-
 
 //Clear Fields
 UI.prototype.clearFields = function(){
